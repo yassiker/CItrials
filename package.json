@@ -7,6 +7,7 @@
     "test": "jest --coverage",
     "tsc": "tsc",
     "clean": "rimraf artifacts",
+    "prebuild": "node node_modules/.bin/rimraf build",
     "build": "npm run clean && npm run tsc --",
     "lint": "tslint src/**/*.ts",
     "watch": "npm run build -- -w",
@@ -15,7 +16,8 @@
   },
   "dependencies": {
     "react": "16.0.0-alpha.12",
-    "react-native": "0.46.4"
+    "react-native": "0.46.4",
+    "react-native-code-push": "^4.0.0-beta"
   },
   "devDependencies": {
     "@types/jest": "^20.0.4",
