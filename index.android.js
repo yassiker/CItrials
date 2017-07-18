@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -12,7 +6,10 @@ import {
   View
 } from 'react-native';
 
-export default class newApp extends Component {
+interface Props { }
+interface State { }
+
+export default class newApp extends Component<Props, State> {
   render() {
     return (
       <View style={styles.container}>
