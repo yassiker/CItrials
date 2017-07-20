@@ -7,7 +7,6 @@
     "test": "jest --coverage",
     "tsc": "tsc",
     "clean": "rimraf artifacts",
-    "prebuild": "node node_modules/.bin/rimraf build",
     "build": "npm run clean && npm run tsc --",
     "lint": "tslint src/**/*.ts",
     "watch": "npm run build -- -w",

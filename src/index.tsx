@@ -6,7 +6,10 @@ import {
   View
 } from 'react-native'
 
-export default class NewApp extends Component{
+export interface Props { }
+export interface State { }
+
+export default class NewApp extends Component<Props, State>  {
   render() {
     return (
       <View style = {styles.container} >
